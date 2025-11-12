@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm kiếm - Đại Nam University</title>
+    <link rel="icon" type="image/svg+xml" href="https://dainam.edu.vn/img/logo/logo-ios-3.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <h1 class="search-page-title">Tìm kiếm</h1>
+            
+            <div class="search-box-wrapper">
+                <form class="search-form" id="searchForm">
+                    <div class="search-input-group">
+                        <input type="text" id="searchInput" class="search-input" placeholder="Nhập từ khóa tìm kiếm..." autocomplete="off">
+                        <button type="submit" class="search-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Tìm kiếm
+                        </button>
+                    </div>
+                    
+                    <div class="search-filters">
+                        <label class="filter-label">Tìm trong:</label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="news" checked>
+                            <span>Tin tức</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="admissions">
+                            <span>Tuyển sinh</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="events">
+                            <span>Sự kiện</span>
+                        </label>
+                        <label class="filter-option">
+                            <input type="checkbox" name="category" value="announcements">
+                            <span>Thông báo</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Search Results -->
+            <div class="search-results" id="searchResults" style="display: none;">
+                <div class="results-header">
+                    <h2 class="results-title">Kết quả tìm kiếm</h2>
+                    <p class="results-count" id="resultsCount"></p>
+                </div>
+                
+                <div class="results-grid" id="resultsGrid">
+                    <!-- Results will be inserted here by JavaScript -->
+                </div>
+            </div>
+
+            <!-- No Results -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                    <circle cx="60" cy="60" r="50" stroke="#E0E0E0" stroke-width="4"/>
+                    <path d="M60 40V70M60 80V85" stroke="#E0E0E0" stroke-width="4" stroke-linecap="round"/>
+                </svg>
+                <h3>Không tìm thấy kết quả</h3>
+                <p>Vui lòng thử lại với từ khóa khác</p>
+            </div>
+
+            <!-- Popular Keywords -->
+            <div class="popular-keywords" id="popularKeywords">
+                <h3 class="keywords-title">Từ khóa phổ biến</h3>
+                <div class="keywords-list">
+                    <button class="keyword-tag" data-keyword="tuyển sinh">Tuyển sinh</button>
+                    <button class="keyword-tag" data-keyword="học bổng">Học bổng</button>
+                    <button class="keyword-tag" data-keyword="lịch học">Lịch học</button>
+                    <button class="keyword-tag" data-keyword="nhập học">Nhập học</button>
+                    <button class="keyword-tag" data-keyword="khai giảng">Khai giảng</button>
+                    <button class="keyword-tag" data-keyword="công nghệ thông tin">Công nghệ thông tin</button>
+                    <button class="keyword-tag" data-keyword="đào tạo">Đào tạo</button>
+                    <button class="keyword-tag" data-keyword="sinh viên">Sinh viên</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

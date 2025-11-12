@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đội ngũ giảng viên - Đại Nam University</title>
+    <link rel="icon" type="image/svg+xml" href="https://dainam.edu.vn/img/logo/logo-ios-3.svg">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <!-- Teachers Section -->
+    <section class="teachers-section">
+        <div class="container">
+            <h1 class="section-main-title">Đội ngũ giảng viên</h1>
+            <p class="section-description">Khoa Công nghệ Thông tin - Trường Đại học Đại Nam</p>
+
+            <div class="teachers-grid">
+                <!-- Teacher 1 -->
+                <article class="teacher-card" data-teacher="tran-dang-cong">
+                    <div class="teacher-card-image">
+                        <img src="https://atm273446-s3user.vcos.cloudstorage.com.vn/dhdainam/asset/images/departments/quotes/image%20%282%29_1.jpg" alt="TS. Trần Đăng Công">
+                    </div>
+                    <div class="teacher-card-content">
+                        <h3 class="teacher-card-name">TS. Trần Đăng Công</h3>
+                        <p class="teacher-card-position">Trưởng khoa Công nghệ Thông tin</p>
+                        <div class="teacher-card-tags">
+                            <span class="teacher-tag">Công nghệ phần mềm</span>
+                            <span class="teacher-tag">Hệ thống thông tin</span>
+                        </div>
+                        <a href="giang-vien.html" class="teacher-card-link">Xem chi tiết →</a>
+                    </div>
+                </article>
+
+                <!-- Teacher 2 -->
+                <article class="teacher-card" onclick="viewTeacher('pham-van-tiep')">
+                    <div class="teacher-card-image">
+                        <img src="https://atm273446-s3user.vcos.cloudstorage.com.vn/dhdainam/thumbnail/images/teachers/59689/image-thumb__59689__teacherResizeThumbnail/Pha%CC%A3m%20Va%CC%86n%20Tie%CC%A3%CC%82p%20%20-%20CNTT%20.a7ae0d12.jpg" alt="ThS. Phạm Văn Tiệp">
+                    </div>
+                    <div class="teacher-card-content">
+                        <h3 class="teacher-card-name">ThS. Phạm Văn Tiệp</h3>
+                        <p class="teacher-card-position">Phó Trưởng khoa</p>
+                        <div class="teacher-card-department">Khoa Công nghệ thông tin</div>
+                        <a href="javascript:void(0)" class="teacher-card-link">Xem chi tiết →</a>
+                    </div>
+                </article>
+
+                <!-- Teacher 3 -->
+                <article class="teacher-card" onclick="viewTeacher('tran-quy-nam')">
+                    <div class="teacher-card-image">
+                        <img src="https://atm273446-s3user.vcos.cloudstorage.com.vn/dhdainam/thumbnail/images/teachers/59426/image-thumb__59426__teacherResizeThumbnail/0J7A2605.882eff93.jpg" alt="TS. Trần Quý Nam">
+                    </div>
+                    <div class="teacher-card-content">
+                        <h3 class="teacher-card-name">TS. Trần Quý Nam</h3>
+                        <p class="teacher-card-position">Trưởng bộ môn Công nghệ dữ liệu</p>
+                        <div class="teacher-card-tags">
+                            <span class="teacher-tag">Data Technology</span>
+                            <span class="teacher-tag">Big Data</span>
+                        </div>
+                        <a href="javascript:void(0)" class="teacher-card-link">Xem chi tiết →</a>
+                    </div>
+                </article>
+
+                <!-- Teacher 4 -->
+                <article class="teacher-card" onclick="viewTeacher('le-trung-hieu')">
+                    <div class="teacher-card-image">
+                        <img src="https://atm273446-s3user.vcos.cloudstorage.com.vn/dhdainam/thumbnail/images/teachers/58611/image-thumb__58611__teacherResizeThumbnail/get-image-thumbnail%20%2812%29.2b8f5b4f.png" alt="ThS. Lê Trung Hiếu">
+                    </div>
+                    <div class="teacher-card-content">
+                        <h3 class="teacher-card-name">ThS. Lê Trung Hiếu</h3>
+                        <p class="teacher-card-position">Phó Trưởng khoa</p>
+                        <div class="teacher-card-department">Khoa Công nghệ thông tin</div>
+                        <a href="javascript:void(0)" class="teacher-card-link">Xem chi tiết →</a>
+                    </div>
+                </article>
+
+                <!-- Teacher 5 -->
+                <article class="teacher-card" onclick="viewTeacher('tran-thi-hue')">
+                    <div class="teacher-card-image">
+                        <img src="https://atm273446-s3user.vcos.cloudstorage.com.vn/dhdainam/thumbnail/images/teachers/59427/image-thumb__59427__teacherResizeThumbnail/0J7A2616.4011c10d.jpg" alt="ThS. Trần Thị Huệ">
+                    </div>
+                    <div class="teacher-card-content">
+                        <h3 class="teacher-card-name">ThS. Trần Thị Huệ</h3>
+                        <p class="teacher-card-position">Giảng viên BM HT&CNPM</p>
+                        <div class="teacher-card-tags">
+                            <span class="teacher-tag">Hệ thống thông tin</span>
+                            <span class="teacher-tag">CNPM</span>
+                        </div>
+                        <a href="javascript:void(0)" class="teacher-card-link">Xem chi tiết →</a>
+                    </div>
+                </article>
+
+                <!-- Teacher 6 -->
+                <article class="teacher-card" onclick="viewTeacher('pham-thi-to-nga')">
+                    <div class="teacher-card-image">
+                        <img src="https://atm273446-s3user.vcos.cloudstorage.com.vn/dhdainam/thumbnail/images/teachers/59687/image-thumb__59687__teacherResizeThumbnail/Pha%CC%A3m%20Thi%CC%A3%20To%CC%82%CC%81%20Nga%20-%20CNTT%20.e7a60745.jpg" alt="ThS. Phạm Thị Tố Nga">
+                    </div>
+                    <div class="teacher-card-content">
+                        <h3 class="teacher-card-name">ThS. Phạm Thị Tố Nga</h3>
+                        <p class="teacher-card-position">Giảng viên BM HT&CNPM</p>
+                        <div class="teacher-card-tags">
+                            <span class="teacher-tag">Hệ thống thông tin</span>
+                            <span class="teacher-tag">CNPM</span>
+                        </div>
+                        <a href="javascript:void(0)" class="teacher-card-link">Xem chi tiết →</a>
+                    </div>
+                </article>
+
+                <!-- Teacher 7 -->
+                <article class="teacher-card" onclick="viewTeacher('nguyen-ngoc-an')">
+                    <div class="teacher-card-image">
+                        <img src="https://atm273446-s3user.vcos.cloudstorage.com.vn/dhdainam/thumbnail/images/teachers/59428/image-thumb__59428__teacherResizeThumbnail/0J7A2600.3f2fdd21.jpg" alt="ThS. Nguyễn Ngọc Ân">
+                    </div>
+                    <div class="teacher-card-content">
+                        <h3 class="teacher-card-name">ThS. Nguyễn Ngọc Ân</h3>
+                        <p class="teacher-card-position">Giảng viên BM Công nghệ dữ liệu</p>
+                        <div class="teacher-card-tags">
+                            <span class="teacher-tag">Data Technology</span>
+                            <span class="teacher-tag">Analytics</span>
+                        </div>
+                        <a href="javascript:void(0)" class="teacher-card-link">Xem chi tiết →</a>
+                    </div>
+                </article>
+
+                <!-- Teacher 8 -->
+                <article class="teacher-card" onclick="viewTeacher('le-van-phong')">
+                    <div class="teacher-card-image">
+                        <img src="https://atm273446-s3user.vcos.cloudstorage.com.vn/dhdainam/thumbnail/images/teachers/59429/image-thumb__59429__teacherResizeThumbnail/0J7A2599.8cf1f540.jpg" alt="ThS. Lê Văn Phong">
+                    </div>
+                    <div class="teacher-card-content">
+                        <h3 class="teacher-card-name">ThS. Lê Văn Phong</h3>
+                        <p class="teacher-card-position">Giảng viên TTTH</p>
+                        <div class="teacher-card-department">Khoa Công nghệ thông tin</div>
+                        <a href="javascript:void(0)" class="teacher-card-link">Xem chi tiết →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/teachers.js"></script>
+</body>
+</html>
